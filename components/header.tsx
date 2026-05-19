@@ -45,8 +45,8 @@ export function Header() {
             <div className="flex items-center gap-6">
               <div className="flex items-center gap-2">
                 <MapPin className="h-4 w-4 shrink-0" />
-                <span className="hidden sm:inline">г. Москва, ул. Каменщиков, д. 15, стр. 2</span>
-                <span className="sm:hidden">Москва</span>
+                <span className="hidden sm:inline">г. Санкт-Петербург, ул. Каменщиков, д. 15, стр. 2</span>
+                <span className="sm:hidden">Санкт-Петербург</span>
               </div>
               <a href="mailto:info@granit.biz" className="hidden md:flex items-center gap-2 hover:underline">
                 <Mail className="h-4 w-4" />

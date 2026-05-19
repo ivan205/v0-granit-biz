@@ -16,7 +16,6 @@ const footerLinks = {
     title: "Изделия",
     links: [
       { label: "Столешницы", href: "/products/countertops" },
-      { label: "Памятники", href: "/products/monuments" },
       { label: "Лестницы", href: "/products/stairs" },
       { label: "Фасады", href: "/products/facades" },
       { label: "Подоконники", href: "/products/windowsills" },

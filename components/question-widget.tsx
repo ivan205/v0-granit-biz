@@ -48,7 +48,7 @@ export function QuestionWidget() {
               Есть вопросы?
             </h3>
             <p className="text-primary-foreground/70 text-sm">
-              Напишите нам, и мы свяжемся с вами
+              Напишите нам или оставьте заявку
             </p>
           </div>
 

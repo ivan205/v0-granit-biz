@@ -1,35 +1,35 @@
-import { Truck, Shield, Clock, Award, Ruler, Headphones } from "lucide-react"
+import { Shield, Clock, Users, Award, Phone, FileText } from "lucide-react"
 
 const features = [
   {
-    icon: Truck,
-    title: "Доставка по России",
-    description: "Отправляем камень и изделия в любую точку страны",
-  },
-  {
     icon: Shield,
-    title: "Гарантия качества",
-    description: "Сертифицированная продукция с гарантией до 25 лет",
+    title: "Надёжность",
+    description: "15 лет успешной работы и доверие тысяч жителей",
   },
   {
     icon: Clock,
-    title: "Быстрые сроки",
-    description: "Изготовление изделий от 3 рабочих дней",
+    title: "Оперативность",
+    description: "Быстрое реагирование на заявки и обращения жителей",
+  },
+  {
+    icon: Users,
+    title: "Профессионализм",
+    description: "Квалифицированные специалисты с большим опытом работы",
   },
   {
     icon: Award,
-    title: "15 лет опыта",
-    description: "Работаем с 2011 года, реализовали 5000+ проектов",
+    title: "Качество",
+    description: "Высокие стандарты обслуживания и содержания домов",
   },
   {
-    icon: Ruler,
-    title: "Бесплатный замер",
-    description: "Выезд специалиста для точных измерений",
+    icon: Phone,
+    title: "Связь 24/7",
+    description: "Круглосуточная диспетчерская служба и аварийная бригада",
   },
   {
-    icon: Headphones,
-    title: "Консультации",
-    description: "Поможем подобрать материал для вашего проекта",
+    icon: FileText,
+    title: "Прозрачность",
+    description: "Открытая отчётность и доступ к информации онлайн",
   },
 ]
 
@@ -40,7 +40,7 @@ export function Features() {
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-primary-foreground">Почему выбирают нас</h2>
           <p className="text-primary-foreground/70 mt-3 max-w-2xl mx-auto">
-            Работаем напрямую с карьерами и производителями, предлагаем лучшие условия
+            Мы заботимся о комфорте и безопасности жителей каждый день
           </p>
         </div>
 

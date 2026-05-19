@@ -6,51 +6,51 @@ import { Button } from "@/components/ui/button"
 const news = [
   {
     id: 1,
-    title: "Поступление итальянского мрамора Calacatta",
-    description: "В нашем каталоге появился эксклюзивный белый мрамор Calacatta из Италии — идеальный выбор для премиальных интерьеров.",
-    image: "https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=600&q=80",
+    title: "Завершён капитальный ремонт кровли на ул. Ленина, 25",
+    description: "Полностью заменена кровля жилого дома. Работы выполнены качественно и в срок.",
+    image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&q=80",
     date: "15 мая 2026",
-    category: "Поступления",
+    category: "Ремонт",
   },
   {
     id: 2,
-    title: "Завершён проект облицовки фасада бизнес-центра",
-    description: "Наша команда успешно завершила облицовку фасада площадью 3000 м² в деловом центре Москвы.",
-    image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=600&q=80",
+    title: "Новые детские площадки во дворах",
+    description: "Установлены современные игровые комплексы в 5 дворах. Площадки соответствуют всем требованиям безопасности.",
+    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
     date: "10 мая 2026",
-    category: "Проекты",
+    category: "Благоустройство",
   },
   {
     id: 3,
-    title: "Участие в выставке «СтройЭкспо 2026»",
-    description: "Приглашаем посетить наш стенд на международной строительной выставке с 20 по 23 мая.",
-    image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&q=80",
+    title: "Собрание собственников жилья",
+    description: "Приглашаем на общее собрание 20 мая в 19:00 в актовом зале по адресу ул. Мира, 10.",
+    image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=600&q=80",
     date: "5 мая 2026",
     category: "События",
   },
   {
     id: 4,
-    title: "Новая коллекция гранита из Индии",
-    description: "Расширили ассортимент экзотическими породами: Blue Pearl, Galaxy Black, Imperial Red.",
-    image: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=600&q=80",
+    title: "График отключения горячей воды на лето",
+    description: "Публикуем график плановых отключений горячего водоснабжения на период профилактических работ.",
+    image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=600&q=80",
     date: "28 апреля 2026",
-    category: "Поступления",
+    category: "Объявления",
   },
   {
     id: 5,
-    title: "Скидки на остатки слэбов",
-    description: "Распродажа слэбов из наличия со скидкой до 30%. Успейте приобрести выгодно!",
-    image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80",
+    title: "Запущен личный кабинет жителя",
+    description: "Теперь вы можете оплачивать услуги, передавать показания и подавать заявки онлайн.",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80",
     date: "20 апреля 2026",
-    category: "Акции",
+    category: "Сервис",
   },
   {
     id: 6,
-    title: "Монтаж гранитной лестницы в частном доме",
-    description: "Реализовали сложный проект винтовой лестницы из карельского гранита с латунными перилами.",
-    image: "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=600&q=80",
+    title: "Итоги работы за первый квартал 2026",
+    description: "Отчёт о проделанной работе: выполнено 1500 заявок, проведено 12 субботников, отремонтировано 8 подъездов.",
+    image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&q=80",
     date: "15 апреля 2026",
-    category: "Проекты",
+    category: "Отчёты",
   },
 ]
 
@@ -60,8 +60,8 @@ export function NewsSection() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between mb-10">
           <div>
-            <h2 className="text-3xl font-bold text-foreground">Новости и события</h2>
-            <p className="text-muted-foreground mt-2">Актуальная информация о компании и рынке камня</p>
+            <h2 className="text-3xl font-bold text-foreground">Новости и объявления</h2>
+            <p className="text-muted-foreground mt-2">Актуальная информация для жителей</p>
           </div>
           <Button variant="outline" className="hidden md:flex items-center gap-2">
             Все новости

@@ -2,43 +2,43 @@ import Link from "next/link"
 import { Phone, Mail, MapPin, Clock } from "lucide-react"
 
 const footerLinks = {
-  catalog: {
-    title: "Каталог",
+  residents: {
+    title: "Жителям",
     links: [
-      { label: "Гранит", href: "/catalog/granite" },
-      { label: "Мрамор", href: "/catalog/marble" },
-      { label: "Известняк", href: "/catalog/limestone" },
-      { label: "Брусчатка", href: "/catalog/paving" },
-      { label: "Слэбы", href: "/catalog/slabs" },
+      { label: "Оплата услуг", href: "/residents/payments" },
+      { label: "Передать показания", href: "/residents/meters" },
+      { label: "Подать заявку", href: "/residents/requests" },
+      { label: "Личный кабинет", href: "/residents/cabinet" },
+      { label: "Документы", href: "/residents/documents" },
     ],
   },
-  products: {
-    title: "Изделия",
+  services: {
+    title: "Услуги",
     links: [
-      { label: "Столешницы", href: "/products/countertops" },
-      { label: "Памятники", href: "/products/monuments" },
-      { label: "Лестницы", href: "/products/stairs" },
-      { label: "Фасады", href: "/products/facades" },
-      { label: "Подоконники", href: "/products/windowsills" },
+      { label: "Содержание домов", href: "/services/maintenance" },
+      { label: "Текущий ремонт", href: "/services/repairs" },
+      { label: "Благоустройство", href: "/services/landscaping" },
+      { label: "Коммунальные услуги", href: "/services/utilities" },
+      { label: "Аварийная служба", href: "/services/emergency" },
     ],
   },
   company: {
     title: "Компания",
     links: [
       { label: "О нас", href: "/about" },
+      { label: "Наши дома", href: "/houses" },
       { label: "Новости", href: "/news" },
-      { label: "Портфолио", href: "/portfolio" },
-      { label: "Отзывы", href: "/reviews" },
+      { label: "Вакансии", href: "/careers" },
       { label: "Контакты", href: "/contacts" },
     ],
   },
   info: {
     title: "Информация",
     links: [
-      { label: "Доставка", href: "/delivery" },
-      { label: "Оплата", href: "/payment" },
-      { label: "Гарантия", href: "/warranty" },
+      { label: "Тарифы", href: "/tariffs" },
+      { label: "Раскрытие информации", href: "/disclosure" },
       { label: "Вопросы и ответы", href: "/faq" },
+      { label: "Обратная связь", href: "/feedback" },
       { label: "Политика конфиденциальности", href: "/privacy" },
     ],
   },
@@ -87,7 +87,7 @@ export function Footer() {
               <div className="flex items-center gap-3">
                 <Clock className="h-5 w-5 text-accent shrink-0" />
                 <span className="text-sm text-primary-foreground/80">
-                  Пн-Пт: 9:00—18:00, Сб: 10:00—16:00
+                  Пн-Пт: 9:00—18:00, Сб: 10:00—14:00
                 </span>
               </div>
             </div>
@@ -119,7 +119,7 @@ export function Footer() {
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-sm text-primary-foreground/60">
-              © 2011—2026 GRANIT.biz. Все права защищены.
+              © 2011—2026 УК Гранит. Все права защищены.
             </p>
             <div className="flex items-center gap-6">
               <Link

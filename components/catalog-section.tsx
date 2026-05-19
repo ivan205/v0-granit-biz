@@ -2,54 +2,54 @@ import Image from "next/image"
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
 
-const categories = [
+const services = [
   {
     id: 1,
-    title: "Гранит",
-    description: "Более 100 видов гранита разных оттенков",
-    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80",
-    count: "120+ видов",
-    href: "/catalog/granite",
+    title: "Содержание домов",
+    description: "Уборка подъездов, обслуживание лифтов и инженерных систем",
+    image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&q=80",
+    count: "50+ домов",
+    href: "/services/maintenance",
   },
   {
     id: 2,
-    title: "Мрамор",
-    description: "Итальянский, греческий, турецкий мрамор",
-    image: "https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=600&q=80",
-    count: "80+ видов",
-    href: "/catalog/marble",
+    title: "Текущий ремонт",
+    description: "Ремонт кровли, фасадов, подъездов и общедомовых помещений",
+    image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80",
+    count: "24/7",
+    href: "/services/repairs",
   },
   {
     id: 3,
-    title: "Брусчатка",
-    description: "Колотая и пиленая гранитная брусчатка",
-    image: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=600&q=80",
-    count: "25+ видов",
-    href: "/catalog/paving",
+    title: "Благоустройство",
+    description: "Озеленение, детские площадки, парковки и дворовые территории",
+    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
+    count: "100+ дворов",
+    href: "/services/landscaping",
   },
   {
     id: 4,
-    title: "Столешницы",
-    description: "Кухонные и ванные столешницы на заказ",
-    image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80",
-    count: "Индивидуально",
-    href: "/products/countertops",
+    title: "Коммунальные услуги",
+    description: "Водоснабжение, отопление, электричество, вывоз мусора",
+    image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=600&q=80",
+    count: "Круглосуточно",
+    href: "/services/utilities",
   },
   {
     id: 5,
-    title: "Памятники",
-    description: "Гранитные памятники и надгробия",
-    image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80",
-    count: "50+ моделей",
-    href: "/products/monuments",
+    title: "Аварийная служба",
+    description: "Экстренное устранение аварий в любое время суток",
+    image: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=600&q=80",
+    count: "24/7",
+    href: "/services/emergency",
   },
   {
     id: 6,
-    title: "Лестницы",
-    description: "Ступени, подступенки, площадки",
-    image: "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=600&q=80",
-    count: "На заказ",
-    href: "/products/stairs",
+    title: "Личный кабинет",
+    description: "Оплата услуг, передача показаний, подача заявок онлайн",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80",
+    count: "Онлайн",
+    href: "/residents/cabinet",
   },
 ]
 
@@ -58,33 +58,33 @@ export function CatalogSection() {
     <section className="py-16 bg-muted/30">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-foreground">Наш каталог</h2>
+          <h2 className="text-3xl font-bold text-foreground">Наши услуги</h2>
           <p className="text-muted-foreground mt-3 max-w-2xl mx-auto">
-            Широкий ассортимент природного камня и изделий из него. 
-            Собственное производство и прямые поставки со всего мира.
+            Полный спектр услуг по управлению и обслуживанию многоквартирных домов. 
+            Работаем для вашего комфорта и безопасности.
           </p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {categories.map((category) => (
+          {services.map((service) => (
             <Link
-              key={category.id}
-              href={category.href}
+              key={service.id}
+              href={service.href}
               className="group relative h-80 rounded-xl overflow-hidden"
             >
               <Image
-                src={category.image}
-                alt={category.title}
+                src={service.image}
+                alt={service.title}
                 fill
                 className="object-cover group-hover:scale-110 transition-transform duration-700"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-6">
-                <span className="text-accent text-sm font-medium">{category.count}</span>
-                <h3 className="text-2xl font-bold text-primary-foreground mt-1">{category.title}</h3>
-                <p className="text-primary-foreground/80 text-sm mt-2">{category.description}</p>
+                <span className="text-accent text-sm font-medium">{service.count}</span>
+                <h3 className="text-2xl font-bold text-primary-foreground mt-1">{service.title}</h3>
+                <p className="text-primary-foreground/80 text-sm mt-2">{service.description}</p>
                 <span className="inline-flex items-center gap-2 text-accent text-sm font-medium mt-4 group-hover:gap-3 transition-all">
-                  Перейти в каталог
+                  Подробнее
                   <ArrowRight className="h-4 w-4" />
                 </span>
               </div>

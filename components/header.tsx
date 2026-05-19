@@ -8,26 +8,26 @@ import { Button } from "@/components/ui/button"
 const navItems = [
   { href: "/", label: "Главная" },
   { 
-    href: "/catalog", 
-    label: "Каталог",
+    href: "/residents", 
+    label: "Жителям",
     children: [
-      { href: "/catalog/granite", label: "Гранит" },
-      { href: "/catalog/marble", label: "Мрамор" },
-      { href: "/catalog/limestone", label: "Известняк" },
-      { href: "/catalog/paving", label: "Брусчатка" },
+      { href: "/residents/payments", label: "Оплата услуг" },
+      { href: "/residents/meters", label: "Передать показания" },
+      { href: "/residents/requests", label: "Подать заявку" },
+      { href: "/residents/documents", label: "Документы" },
     ]
   },
   { 
-    href: "/products", 
-    label: "Изделия",
+    href: "/services", 
+    label: "Услуги",
     children: [
-      { href: "/products/countertops", label: "Столешницы" },
-      { href: "/products/monuments", label: "Памятники" },
-      { href: "/products/stairs", label: "Лестницы" },
-      { href: "/products/facades", label: "Фасады" },
+      { href: "/services/maintenance", label: "Содержание домов" },
+      { href: "/services/repairs", label: "Текущий ремонт" },
+      { href: "/services/landscaping", label: "Благоустройство" },
+      { href: "/services/utilities", label: "Коммунальные услуги" },
     ]
   },
-  { href: "/about", label: "О компании" },
+  { href: "/houses", label: "Наши дома" },
   { href: "/news", label: "Новости" },
   { href: "/contacts", label: "Контакты" },
 ]
@@ -119,7 +119,7 @@ export function Header() {
               <Search className="h-5 w-5" />
             </Button>
             <Button className="hidden sm:flex bg-accent hover:bg-accent/90 text-accent-foreground">
-              Заказать звонок
+              Подать заявку
             </Button>
             <Button
               variant="ghost"
@@ -163,7 +163,7 @@ export function Header() {
               ))}
             </nav>
             <Button className="w-full mt-4 bg-accent hover:bg-accent/90 text-accent-foreground">
-              Заказать звонок
+              Подать заявку
             </Button>
           </div>
         )}

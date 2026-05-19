@@ -68,7 +68,7 @@ export function Footer() {
               <div className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-accent shrink-0 mt-0.5" />
                 <span className="text-sm text-primary-foreground/80">
-                  г. Москва, ул. Каменщиков, д. 15, стр. 2
+                  г. Санкт-Петербург, ул. Каменщиков, д. 15, стр. 2
                 </span>
               </div>
               <div className="flex items-center gap-3">

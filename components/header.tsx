@@ -22,7 +22,6 @@ const navItems = [
     label: "Изделия",
     children: [
       { href: "/products/countertops", label: "Столешницы" },
-      { href: "/products/monuments", label: "Памятники" },
       { href: "/products/stairs", label: "Лестницы" },
       { href: "/products/facades", label: "Фасады" },
     ]

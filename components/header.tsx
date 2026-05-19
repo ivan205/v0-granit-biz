@@ -76,7 +76,7 @@ export function Header() {
             </div>
             <div>
               <div className="text-2xl font-bold text-foreground tracking-tight">GRANIT<span className="text-accent">.biz</span></div>
-              <div className="text-xs text-muted-foreground uppercase tracking-wider">Управляющая компания</div>
+              <div className="text-sm font-semibold text-muted-foreground uppercase tracking-wider">Управляющая компания</div>
             </div>
           </Link>
 

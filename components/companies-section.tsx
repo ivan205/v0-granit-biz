@@ -55,7 +55,7 @@ export function CompaniesSection() {
                 </div>
               </div>
 
-              <div className="p-5 flex flex-col flex-1">
+              <div className="p-5 flex flex-col flex-1 text-center">
                 <h3 className="text-lg font-bold text-foreground leading-tight">
                   {company.name}
                 </h3>
@@ -67,7 +67,7 @@ export function CompaniesSection() {
                 </p>
                 <a
                   href="#"
-                  className="mt-4 inline-block text-sm font-semibold text-primary hover:text-accent transition-colors"
+                  className="mt-4 inline-block text-sm font-semibold text-primary hover:text-accent transition-colors mx-auto"
                 >
                   Подробнее &rarr;
                 </a>

@@ -5,6 +5,7 @@ import { CatalogSection } from "@/components/catalog-section"
 import { Features } from "@/components/features"
 import { NewsSection } from "@/components/news-section"
 import { Partners } from "@/components/partners"
+import { CompaniesSection } from "@/components/companies-section"
 import { Footer } from "@/components/footer"
 import { QuestionWidget } from "@/components/question-widget"
 
@@ -17,6 +18,7 @@ export default function Home() {
         <Announcements />
         <CatalogSection />
         <Features />
+        <CompaniesSection />
         <NewsSection />
         <Partners />
       </main>
